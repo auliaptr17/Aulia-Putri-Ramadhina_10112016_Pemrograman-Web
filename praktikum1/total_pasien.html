@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pasien - Layanan Konsultasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 20px;
+            color: #333;
+        }
+
+        /*Header*/
+        .header-tabel {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /*Sidebar*/
+        .sidebar {
+            float: left;
+            width: 22%;
+            background-color: #ffffff;
+            padding: 15px;
+            min-height: 350px;
+            border-right: 3px solid #3498db;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .sidebar ul {
+            padding-left: 20px;
+            line-height: 2;
+        }
+
+        .sidebar a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            color: #3498db;
+        }
+
+        /*Konten Utama*/
+        .content {
+            float: left;
+            width: 70%;
+            background-color: #ffffff;
+            padding: 20px;
+            min-height: 350px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /*Tombol Tambah Data*/
+        .btn-tambah {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: white;
+            padding: 8px 14px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn-tambah:hover {
+            background-color: #27ae60;
+        }
+
+        /*Desain Tabel Data Pasien*/
+        table.data-tabel {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table.data-tabel th, table.data-tabel td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table.data-tabel th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        table.data-tabel tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner Header -->
+    <table class="header-tabel" width="100%">
+        <tr>
+            <td width="120px" style="border: none;">
+                <img src="img/logo.jpg.jpg" alt="Logo" width="100px" style="background: white; padding: 5px; border-radius: 5px;">
+            </td>
+            <td style="border: none;">
+                <h2 style="margin: 0;">LAYANAN TERAPI DAN KONSULTASI</h2>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Menu Utama</h3>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="form_data_penjualan.html">Data Pasien</a></li>
+            <li><a href="total_pasien.html">Total Data Pasien</a></li>
+            <li><a href="#">Laporan</a></li>
+        </ul>
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="content">
+        <h2>DATA PASIEN</h2>
+        <a href="#" class="btn-tambah">+ Tambah Data Pasien</a>
+
+        <!-- Tabel Data Pasien -->
+        <table class="data-tabel">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>ID Pasien</th>
+                    <th>Nama Pasien</th>
+                    <th>Umur</th>
+                    <th>Alamat</th>
+                    <th>Jadwal Terapi/Konsultasi</th>
+                    <th colspan="2" style="text-align: center;">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>P-001</td>
+                    <td>Alya Putri</td>
+                    <td>19 Tahun</td>
+                    <td>Subang</td>
+                    <td>14/08/2026</td>
+                    <td align="center"><a href="#" class="action-edit">Edit</a></td>
+                    <td align="center"><a href="#" class="action-delete">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>P-002</td>
+                    <td>Nazira Gilda</td>
+                    <td>19 Tahun</td>
+                    <td>Subang</td>
+                    <td>20/08/2026</td>
+                    <td align="center"><a href="#" class="action-edit">Edit</a></td>
+                    <td align="center"><a href="#" class="action-delete">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>P-003</td>
+                    <td>Liliana</td>
+                    <td>20 Tahun</td>
+                    <td>Karawang</td>
+                    <td>21/08/2026</td>
+                    <td align="center"><a href="#" class="action-edit">Edit</a></td>
+                    <td align="center"><a href="#" class="action-delete">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

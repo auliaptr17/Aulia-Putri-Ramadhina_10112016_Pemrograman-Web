@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Konsultasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8; /* Warna latar belakang lembut */
+            margin: 20px;
+        }
+
+        /*Menu sidebar*/
+        .sidebar {
+            float: left;
+            width: 20%;
+            background-color: #ffffff;
+            padding: 15px;
+            border-right: 3px solid #3498db; /* Garis pembatas warna biru */
+            min-height: 300px;
+        }
+
+        /*Form area*/
+        .content {
+            float: left;
+            width: 70%;
+            padding-left: 30px;
+        }
+
+        /*Desain kartu form*/
+        .form-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        /*Tombol Login*/
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <table class="header-tabel" width="100%">
+        <tr>
+            <td width="150px">
+                <img src="img/logo.jpg.jpg" alt="Logo" width="200px">
+            </td>
+            <td>
+                <h2>LAYANAN TERAPI DAN KONSULTASI PSIKOLOGI</h2>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Sidebar-->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Form Login -->
+    <div class="content">
+        <div class="form-box">
+            <form action="home.html">
+                <table>
+                    <tr>
+                        <td rowspan="4" style="padding-right: 20px;">
+                            <img src="img/Host And Admin Marketing Job Vacancies Vector, Recruitment, Open Job, Office Girls PNG and Vector with Transparent Background for Free Download.jpg" height="180px" alt="Admin">
+                        </td>
+                        <th colspan="2" align="left"><h3>Login Admin</h3></th>
+                    </tr>
+                    <tr>
+                        <td>Username</td>
+                        <td>: <input type="text" name="username"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>: <input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Level</td>
+                        <td>: 
+                            <select name="level">
+                                <option value="No Choice">No Choice</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Content Writer">Content Writer</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2"><br><input type="submit" name="submit" value="Login"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
