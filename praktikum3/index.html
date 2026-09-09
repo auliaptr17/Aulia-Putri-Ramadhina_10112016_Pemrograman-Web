@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Praktikum JavaScript - Total Penjualan</title>
+</head>
+<body>
+
+<script> //internal JavaScript
+    var nama1 = prompt("Masukan Nama Barang 1");
+    var harga1 = parseInt(prompt("Masukan Harga Barang 1"));
+    var jumlah1 = parseInt(prompt("Masukan Jumlah Barang 1"));
+
+    var nama2 = prompt("Masukan Nama Barang 2");
+    var harga2 = parseInt(prompt("Masukan Harga Barang 2"));
+    var jumlah2 = parseInt(prompt("Masukan Jumlah Barang 2"));
+
+    var nama3 = prompt("Masukan Nama Barang 3");
+    var harga3 = parseInt(prompt("Masukan Harga Barang 3"));
+    var jumlah3 = parseInt(prompt("Masukan Jumlah Barang 3"));
+
+    var diskon = parseFloat(prompt("Masukan % Diskon"));
+    var dibayar = parseInt(prompt("Dibayar"));
+
+    var sub1 = harga1 * jumlah1;
+    var sub2 = harga2 * jumlah2;
+    var sub3 = harga3 * jumlah3;
+
+    var totalHarga = sub1 + sub2 + sub3;
+    var totalSetelahDiskon = totalHarga - (totalHarga * (diskon / 100));
+    var kembali = dibayar - totalSetelahDiskon;
+
+    document.write("<table border='1' cellpadding='4' cellspacing='0'>");
+    
+    // Header Tabel
+    document.write("<tr>");
+    document.write("<th>Nama</th>");
+    document.write("<th>Harga</th>");
+    document.write("<th>Jumlah</th>");
+    document.write("<th>Sub Total</th>");
+    document.write("</tr>");
+
+    //Barang 1
+    document.write("<tr>");
+    document.write("<td>" + nama1 + "</td>");
+    document.write("<td>" + harga1 + "</td>");
+    document.write("<td>" + jumlah1 + "</td>");
+    document.write("<td>" + sub1 + "</td>");
+    document.write("</tr>");
+
+    //Barang 2
+    document.write("<tr>");
+    document.write("<td>" + nama2 + "</td>");
+    document.write("<td>" + harga2 + "</td>");
+    document.write("<td>" + jumlah2 + "</td>");
+    document.write("<td>" + sub2 + "</td>");
+    document.write("</tr>");
+
+    //Barang 3
+    document.write("<tr>");
+    document.write("<td>" + nama3 + "</td>");
+    document.write("<td>" + harga3 + "</td>");
+    document.write("<td>" + jumlah3 + "</td>");
+    document.write("<td>" + sub3 + "</td>");
+    document.write("</tr>");
+
+    //Total Harga
+    document.write("<tr>");
+    document.write("<td></td><td></td>");
+    document.write("<td>Total Harga :</td>");
+    document.write("<td>" + totalHarga + "</td>");
+    document.write("</tr>");
+
+    //Baris Diskon
+    document.write("<tr>");
+    document.write("<td></td><td></td>");
+    document.write("<td>Potongan harga dari Diskon " + diskon + " % :</td>");
+    document.write("<td>" + totalSetelahDiskon + "</td>");
+    document.write("</tr>");
+
+    //Baris Dibayar
+    document.write("<tr>");
+    document.write("<td></td><td></td>");
+    document.write("<td>Dibayar :</td>");
+    document.write("<td>" + dibayar + "</td>");
+    document.write("</tr>");
+
+    //Baris Kembali
+    document.write("<tr>");
+    document.write("<td></td><td></td>");
+    document.write("<td>Kembali :</td>");
+    document.write("<td>" + kembali + "</td>");
+    document.write("</tr>");
+
+    document.write("</table>");
+</script>
+
+</body>
+</html>
